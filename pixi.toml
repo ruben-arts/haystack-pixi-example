@@ -1,0 +1,18 @@
+[project]
+name = "haystack"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Ruben Arts <ruben.arts@hotmail.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tasks]
+start = "python main.py"
+
+[dependencies]
+python = '3.10'
+pytorch = "2.0.0.*"
+nltk = "3.8.1.*"
+
+[pypi-dependencies]
+farm-haystack = ">=1.20"
